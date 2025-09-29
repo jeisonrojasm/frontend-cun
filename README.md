@@ -79,7 +79,12 @@ Este proyecto no requiere Docker ni archivos `.env`. Solo necesitas tener instal
 npm install
 ```
 
-### 2. Inicia la aplicación
+### 2. **Archivo `.env` requerido**
+
+El archivo `.env` contiene variables sensibles necesarias para ejecutar el proyecto (como credenciales, tokens y URLs de servicios).
+Por motivos de seguridad **no está incluido en el repositorio**.
+
+### 3. Inicia la aplicación
 
 ```bash
 npm run dev
