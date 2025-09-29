@@ -1,8 +1,25 @@
 .evaluacion__preguntas {
-  border: "1px solid #ccc";
-  border-radius: "10px";
-  padding: "20px";
-  margin-bottom: "20px";
+  border: 0.1rem solid var(--color1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.evaluacion__subtitle {
+  font-size: var(--font-size__subtitle__mobile);
+}
+
+@media(min-width: 768px) {
+  .evaluacion__subtitle {
+    font-size: var(--font-size__subtitle__tablet);
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .evaluacion__subtitle {
+    font-size: var(--font-size__subtitle__desktop);
+  }
 }
 
 .preguntas__lista {
@@ -10,18 +27,49 @@
   padding: 0;
 }
 
-.pregunta {
-  margin-bottom: 10px;
+.pregunta__text {
+  margin-bottom: 1rem;
+  font-size: var(--font-size__text__mobile);
+}
+
+@media(min-width: 768px) {
+  .pregunta__text {
+    font-size: var(--font-size__text__tablet);
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .pregunta__text {
+    font-size: var(--font-size__text__desktop);
+  }
 }
 
 .pregunta__responder-btn {
   width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--color1);
   cursor: pointer;
 }
 
 .pregunta__resultado {
   font-weight: bold;
+  font-size: var(--font-size__text__mobile);
+}
+
+@media(min-width: 768px) {
+  .pregunta__resultado {
+    font-size: var(--font-size__text__tablet);
+  }
+}
+
+@media(min-width: 1024px) {
+  .pregunta__resultado {
+    font-size: var(--font-size__text__desktop);
+  }
+}
+
+.evaluacion__completed {
+  text-align: center;
 }

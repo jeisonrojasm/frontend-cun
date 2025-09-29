@@ -24,7 +24,7 @@ export const Evaluacion = () => {
   }, [currentIndex, preguntas.length, navigate])
 
   if (preguntas.length === 0) {
-    return <p>No hay preguntas disponibles.</p>
+    return <p className='evaluacion__subtitle'>No hay preguntas disponibles.</p>
   }
 
   const currentPregunta = preguntas[currentIndex]
@@ -33,10 +33,10 @@ export const Evaluacion = () => {
     <div className='evaluacion'>
       {currentIndex < preguntas.length ? (
         <div className='evaluacion__preguntas'        >
-          <h2>{currentPregunta.enunciado}</h2>
+          <h2 className='evaluacion__subtitle'>{currentPregunta.enunciado}</h2>
           <ul className='preguntas__lista'>
             {currentPregunta.opciones.map((opcion: any, index: number) => (
-              <li key={index} className='pregunta'>
+              <li key={index} className='pregunta__text'>
                 <button
                   onClick={() => handleResponder(opcion, setRespuesta, setResultado, setCurrentIndex, currentPregunta)}
                   disabled={respuesta !== null} // deshabilita botones después de responder
@@ -62,7 +62,7 @@ export const Evaluacion = () => {
           )}
         </div>
       ) : (
-        <h2>Evaluación completada</h2>
+        <h2 className='evaluacion__subtitle evaluacion__completed'>🎊 Evaluación completada 🎊</h2>
       )}
     </div>
   )
