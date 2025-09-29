@@ -1,0 +1,27 @@
+.evaluacion__preguntas {
+  border: "1px solid #ccc";
+  border-radius: "10px";
+  padding: "20px";
+  margin-bottom: "20px";
+}
+
+.preguntas__lista {
+  list-style: none;
+  padding: 0;
+}
+
+.pregunta {
+  margin-bottom: 10px;
+}
+
+.pregunta__responder-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.pregunta__resultado {
+  font-weight: bold;
+}
