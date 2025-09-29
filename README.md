@@ -84,6 +84,10 @@ npm install
 El archivo `.env` contiene variables sensibles necesarias para ejecutar el proyecto (como credenciales, tokens y URLs de servicios).
 Por motivos de seguridad **no está incluido en el repositorio**.
 
+> 🔐 **En el correo que te llegó encontrarás el archivo `.env` necesario para que la ejecución del backend funcione correctamente.**
+
+Una vez lo tengas, colócalo en la raíz del proyecto.
+
 ### 3. Inicia la aplicación
 
 ```bash
