@@ -1,0 +1,135 @@
+.cursos__title {
+  font-size: var(--font-size__title__mobile);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .cursos__title {
+    font-size: var(--font-size__title__tablet);
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .cursos__title {
+    font-size: var(--font-size__title__desktop);
+  }
+
+}
+
+.cursos__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cursos__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .cursos__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+}
+
+.cursos__card {
+  border: 0.1rem solid var(--color1);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 0.4rem #0000001a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .cursos__card {
+    padding: 2rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .cursos__card {
+    padding: 3rem;
+  }
+
+}
+
+.cursos__subtitle {
+  font-size: var(--font-size__subtitle__mobile);
+}
+
+@media(min-width: 768px) {
+  .cursos__subtitle {
+    font-size: var(--font-size__subtitle__tablet);
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .cursos__subtitle {
+    font-size: var(--font-size__subtitle__desktop);
+  }
+}
+
+.cursos__text {
+  font-size: var(--font-size__text__mobile);
+}
+
+@media(min-width: 768px) {
+  .cursos__text {
+    font-size: var(--font-size__text__tablet);
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .cursos__text {
+    font-size: var(--font-size__text__desktop);
+  }
+}
+
+.cursos__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursos__btn {
+  background-color: var(--color3);
+  color: var(--color5);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: var(--font-size__btn__mobile);
+  transition: background-color 0.3s ease;
+}
+
+.cursos__btn:hover {
+  background-color: var(--color2);
+}
+
+@media(min-width: 768px) {
+  .cursos__btn {
+    font-size: var(--font-size__btn__tablet);
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .cursos__btn {
+    font-size: var(--font-size__btn__desktop);
+  }
+
+}

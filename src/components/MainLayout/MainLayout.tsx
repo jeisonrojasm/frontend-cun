@@ -1,10 +1,12 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
+import './MainLayout.css'
 
 export const MainLayout = () => {
   return (
     <>
-      <Outlet />
+      <div className='main-layout'>
+        <Outlet />
+      </div>
     </>
   )
 }

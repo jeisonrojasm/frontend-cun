@@ -1,3 +1,29 @@
+:root {
+  --font-family-base: 'Roboto', sans-serif;
+  --font-size__title__mobile: 3rem;
+  --font-size__title__tablet: 4rem;
+  --font-size__title__desktop: 5rem;
+  --font-size__subtitle__mobile: 2rem;
+  --font-size__subtitle__tablet: 2.5rem;
+  --font-size__subtitle__desktop: 3rem;
+  --font-size__text__mobile: 1.2rem;
+  --font-size__text__tablet: 1.4rem;
+  --font-size__text__desktop: 1.6rem;
+  --font-size__btn__mobile: 1.2rem;
+  --font-size__btn__tablet: 1.4rem;
+  --font-size__btn__desktop: 1.6rem;
+  --color1: #ccc;
+  --color2: #333;
+  --color3: #666;
+  --color4: #999;
+  --color5: #f5f5f5;
+}
+
+html,
+body {
+  font-family: var(--font-family-base);
+}
+
 .app {
   flex: 1;
   display: flex;
