@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 import { getAllCursosQuery } from '../../utils/queries'
 import { DataContext } from '../../context/DataContext'
 import { onVerCursoClick } from './CursosFunctions'
