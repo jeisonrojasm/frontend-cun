@@ -1,103 +1,108 @@
 # CUN Frontend
 
-Dashboard para manejar los datos de un sistema de gestión de evaluaciones.
+This project implements a simple frontend interface for a fullstack evaluation management system. It consumes a REST API built with NestJS, TypeScript, Prisma, and PostgreSQL. The frontend allows users to browse courses, view lessons, and take evaluations interactively.
 
-## Tecnologías
+> ⚠️ **Note: The frontend requires the [*backend-cun*](https://github.com/jeisonrojasm/backend-cun) application to be running in order to make API requests.**
+
+## 🛠️ Built with
 
 - React + Vite
 - Context API
 - Typescript
 
-## ✅ Prerrequisitos
+## ✅ Prerequisites
 
-Antes de comenzar, asegúrate de tener instalado lo siguiente:
+Before getting started, make sure you have the following installed:
 
 - ✅ [*Git*](https://git-scm.com/)
 
-## 📥 Obtener el proyecto
+## 📥 Get the project
 
-Clona el repositorio:
+Clone the repository:
 
 ```bash
-#Clona el repositorio
+#Clone the repository:
 git clone https://github.com/jeisonrojasm/frontend-cun.git
 cd frontend-cun
 ```
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
-El frontend de frontend-cun está construido con React, y sigue una estructura modular y escalable. Se utiliza Vite como bundler, junto con buenas prácticas para facilitar el mantenimiento, pruebas y reutilización de componentes.
+This frontend is built with React and follows a modular and scalable structure. Vite is used as the bundler, along with best practices to facilitate maintenance, testing, and component reuse.
 
 ```bash
 frontend-cun/
-├── public/                  # Archivos públicos (favicon, index.html)
-├── src/                     # Código fuente del frontend
-│   ├── components/          # Componentes reutilizables de UI
-│   │   └── Button/          # Ejemplo de componente atómico
+├── public/                  # Public files (favicon, index.html)
+├── src/                     # Frontend source code
+│   ├── components/          # Reusable UI components
+│   │   └── Button/          # Example of an atomic component
 │   │       ├── Button.tsx
 │   │       ├── Button.css
-│   ├── context/             # Contextos globales (ej. autenticación, estado de usuario)
+│   ├── context/             # Global contexts (e.g., authentication, user state)
 │   │   ├── DataContext.tsx
-│   ├── hooks/               # Hooks personalizados reutilizables
+│   ├── hooks/               # Reusable custom hooks
 │   │   └── useModal.ts
-│   ├── utils/               # Funciones utilitarias
+│   ├── utils/               # Utility functions
 │   │   ├── functions.ts
-│   │   ├── queries.ts        # Funciones que consumen la API del backend
-│   ├── views/               # Vistas de páginas (agrupadas por ruta o flujo)
+│   │   ├── queries.ts        # Functions that consume the backend API
+│   ├── views/                # Page views (grouped by route or flow)
 │   │   └── SignIn/
 │   │       ├── SignIn.tsx
 │   │       ├── SignIn.css
 │   │       ├── SignInFunctions.ts
-│   ├── App.tsx              # Componente raíz de la app
-│   ├── App.css              # Estilos globales de la app
-│   ├── main.tsx             # Punto de entrada principal
-│   └── index.css            # Estilos base/globales
-├── .env                     # Variables de entorno para desarrollo (no versionado)
-├── .gitignore               # Archivos y carpetas ignoradas por Git
-├── index.html               # Archivo base HTML (usado por Vite)
-├── package.json             # Dependencias y scripts
-└── README.md                # Documentación del proyecto
+│   ├── App.tsx              # Root component of the app
+│   ├── App.css              # Global app styles
+│   ├── main.tsx             # Main entry point
+│   └── index.css            # Base/global styles
+├── .env                     # Environment variables for development
+├── .gitignore               # Files and folders ignored by Git
+├── index.html               # Base HTML file (used by Vite)
+├── package.json             # Dependencies and scripts
+└── README.md                # Project documentation
 ```
 
-### 🧱 Convenciones por módulo
+### 🧱 Conventions per module
 
-Cada módulo en `views/` y `components/` sigue un patrón de separación por archivo para mantener una arquitectura limpia y escalable:
+Each module in `views/` and `components/` follows a file-separation pattern to maintain a clean and scalable architecture:
 
-| Archivo           | Propósito                                                     |
+| File              | Purpose                                                       |
 |-------------------|---------------------------------------------------------------|
-| `*.tsx`           | Componente principal (vista o UI reusable)                    |
-| `*.css`           | Estilos específicos del componente o vista                    |
-| `*Functions.ts`   | Funciones auxiliares específicas del módulo                   |
+| `*.tsx`           | Main component (view or reusable UI)                          |
+| `*.css`           | Component- or view-specific styles                            |
+| `*Functions.ts`   | Module-specific helper functions                              |
 
-## 🚀 Ejecutar
+## 🚀 Run
 
-Este proyecto no requiere Docker ni archivos `.env`. Solo necesitas tener instalado Node.js (versión 18 o superior recomendada).
+You only need to have Node.js installed (version 18 or higher recommended).
 
-### 1. **Instala las dependencias**
+### 1. **Install the dependencies**
 
 ```bash
 npm install
 ```
 
-### 2. **Archivo `.env` requerido**
+### 2. **`.env` file required**
 
-El archivo `.env` contiene variables sensibles necesarias para ejecutar el proyecto (como credenciales, tokens y URLs de servicios).
-Por motivos de seguridad **no está incluido en el repositorio**.
+Normally, the `.env` file **should not be included** in a public repository, as it may contain sensitive configuration values.
+However, for demonstration and evaluation purposes —and because this is not a production project— the `.env` file is included in the repository so anyone can run the project without additional setup.
 
-> 🔐 **En el correo que te llegó encontrarás el archivo `.env` necesario para que la ejecución del backend funcione correctamente.**
+You will find the `.env` file already placed in the root of the project.
 
-Una vez lo tengas, colócalo en la raíz del proyecto.
-
-### 3. Inicia la aplicación
+### 3. Start the application
 
 ```bash
 npm run dev
 ```
 
-## ✅ Aplicación lista para usarse
+## ✅ Application ready to use
 
-Podrás ver la aplicación en funcionamiento.
+You will be able to see the application running.
 
-## 👨‍💻 Autor
+> 🧪 You can access `http://localhost:5173/` from your browser and start interacting with the interface.
 
-Desarrollado por **Jeison Rojas** - *Desarrollador Fullstack* - [jeisonrojasm](https://github.com/jeisonrojasm)
+## 👨‍💻 Author
+
+Developed by **Jeison Rojas Mora** - *Fullstack Developer*
+
+- [https://github.com/jeisonrojasm](https://github.com/jeisonrojasm)
+- [https://www.linkedin.com/in/jeison-rojas-mora/](https://www.linkedin.com/in/jeison-rojas-mora/)
